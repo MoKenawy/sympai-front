@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Providers from "./providers";
 import SideNav from "@/components/Sidenav/sideNav";
+import { Suspense } from "react";
 
 
 
@@ -33,8 +34,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`h-full ${inter.className}`}>
 
-        <div className="flex h-screen">
+        <div className="flex h-screen overflow-y-auto">
+          <div className="w-64 h-full">
           <SideNav />
+
+          </div>
           <div className="flex-grow">
             <Providers>
               {children}

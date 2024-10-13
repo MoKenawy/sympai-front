@@ -2,6 +2,7 @@
 
 
 import { NextUIProvider } from "@nextui-org/react";
+import { Suspense } from "react";
 
 
 export default function Providers({
@@ -12,7 +13,9 @@ export default function Providers({
     return (
         <div className="h-full">
                 <NextUIProvider>
+                <Suspense fallback={"Hello"}>
                     {children}
+                </Suspense>
                 </NextUIProvider>
         </div>
 
