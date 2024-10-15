@@ -3,7 +3,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Providers from "./providers";
 import SideNav from "@/components/Sidenav/sideNav";
-import { Suspense } from "react";
 
 
 
