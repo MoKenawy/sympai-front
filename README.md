@@ -45,7 +45,7 @@ Configure the necessary environment variables (if any) in the .env file or as ne
 
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/MoKenawy/sympai-front/blob/master/LICENSE).
 
 # Related Repositories
 [SympAI Backend](https://github.com/MoKenawy/sympai-backend)
