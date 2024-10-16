@@ -1,9 +1,22 @@
 # SympAI Frontend
 
+<image src="https://github.com/MoKenawy/sympai-front/blob/master/docs/symp-ai-logo.jfif" width="100%" height="500px"/>
+
+
 ## Overview
 SympAI Frontend provides the user interface for the SympAI healthcare chatbot. Built with Next.js, the frontend allows users to interact with the chatbot, input symptoms, and view recommendations in a conversational manner. The frontend is deployed via AWS Amplify, ensuring scalability and performance.
 
+
+<image src="https://github.com/MoKenawy/sympai-front/blob/master/docs/UI-2.png" />
+</br>
+
+### AWS solution
+
+<image src="https://github.com/MoKenawy/sympai-front/blob/master/docs/aws%20solution_V3.drawio.png" width="1280" height="640"/>
+
+
 This repository works together with the [SympAI Backend](https://github.com/MoKenawy/sympai-backend), which handles the API and model logic for chatbot interactions.
+
 
 ## Features
 - Built with Next.js for efficient server-side rendering.
