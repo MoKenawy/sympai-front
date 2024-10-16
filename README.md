@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SympAI Frontend
 
-## Getting Started
+## Overview
+SympAI Frontend provides the user interface for the SympAI healthcare chatbot. Built with Next.js, the frontend allows users to interact with the chatbot, input symptoms, and view recommendations in a conversational manner. The frontend is deployed via AWS Amplify, ensuring scalability and performance.
 
-First, run the development server:
+This repository works together with the [SympAI Backend](https://github.com/MoKenawy/sympai-backend), which handles the API and model logic for chatbot interactions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Built with Next.js for efficient server-side rendering.
+- Responsive design for desktop and mobile.
+- Dynamic pages for chat sessions and user profiles.
+- Deployed on AWS Amplify with CI/CD integration.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js
+- Docker (for containerized deployment)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Install dependencies
 
-## Learn More
+1. Clone the repository:
+   ```bash
+     git clone https://github.com/yourusername/symp-ai-frontend.git
+     cd symp-ai-frontend
+   ```
+2. Install dependencies:
+   ```bash
+     pnpm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+### Set up environment variables:
+Configure the necessary environment variables (if any) in the .env file or as needed during deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run Docker to containerize the frontend:
+1. Build the Docker image:
+   ```bash
+     docker build -t sympai-frontend .
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Run the container:
+   ```bash
+     docker run -p 3000:3000 sympai-frontend
+   ```
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
+This project is licensed under the MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Related Repositories
+[SympAI Backend](https://github.com/MoKenawy/sympai-backend)
