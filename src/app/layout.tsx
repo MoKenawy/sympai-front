@@ -5,7 +5,6 @@ import Providers from "./providers";
 import SideNav from "@/components/Sidenav/sideNav";
 
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,16 +27,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  
+
   return (
     <html lang="en">
       <body className={`h-full ${inter.className}`}>
-            <Providers>
-              {children}
-            </Providers>
+
+          <Providers>
+            {children}
+          </Providers>
+
       </body>
 
-    </html>
+    </html >
 
   );
 }

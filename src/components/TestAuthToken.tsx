@@ -13,7 +13,8 @@ const TestAuthToken: React.FC = () => {
     const handleLogin = async () => {
         setError(null); // Reset error state
         try {
-            const token = await getAuthToken(username, password);
+            const token = await getAuthToken(username, password);]
+
             setToken(token);
         } catch (err) {
             setError('Error getting token: ' + (err as Error).message);

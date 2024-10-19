@@ -12,11 +12,11 @@ export default function Providers({
 }>) {
     return (
         <div className="h-full">
-                <NextUIProvider>
-                <Suspense fallback={"Hello"}>
-                    {children}
-                </Suspense>
-                </NextUIProvider>
+            <NextUIProvider>
+                    <Suspense fallback={"Loading ..."}>
+                        {children}
+                    </Suspense>
+            </NextUIProvider>
         </div>
 
     );
